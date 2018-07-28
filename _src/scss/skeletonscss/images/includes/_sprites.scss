@@ -9,6 +9,28 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$-arabesco-bottom-bottom-name: 'ArabescoBottom--bottom';
+$-arabesco-bottom-bottom-x: 0px;
+$-arabesco-bottom-bottom-y: 125px;
+$-arabesco-bottom-bottom-offset-x: 0px;
+$-arabesco-bottom-bottom-offset-y: -125px;
+$-arabesco-bottom-bottom-width: 243px;
+$-arabesco-bottom-bottom-height: 53px;
+$-arabesco-bottom-bottom-total-width: 308px;
+$-arabesco-bottom-bottom-total-height: 230px;
+$-arabesco-bottom-bottom-image: '../images/sprite.png';
+$-arabesco-bottom-bottom: (0px, 125px, 0px, -125px, 243px, 53px, 308px, 230px, '../images/sprite.png', 'ArabescoBottom--bottom', );
+$-arabesco-top-intro-name: 'ArabescoTop--intro';
+$-arabesco-top-intro-x: 0px;
+$-arabesco-top-intro-y: 71px;
+$-arabesco-top-intro-offset-x: 0px;
+$-arabesco-top-intro-offset-y: -71px;
+$-arabesco-top-intro-width: 243px;
+$-arabesco-top-intro-height: 54px;
+$-arabesco-top-intro-total-width: 308px;
+$-arabesco-top-intro-total-height: 230px;
+$-arabesco-top-intro-image: '../images/sprite.png';
+$-arabesco-top-intro: (0px, 71px, 0px, -71px, 243px, 54px, 308px, 230px, '../images/sprite.png', 'ArabescoTop--intro', );
 $-figure-icon-newsletter-name: 'FigureIcon--newsletter';
 $-figure-icon-newsletter-x: 243px;
 $-figure-icon-newsletter-y: 71px;
@@ -31,28 +53,6 @@ $-figure-icon-send-total-width: 308px;
 $-figure-icon-send-total-height: 230px;
 $-figure-icon-send-image: '../images/sprite.png';
 $-figure-icon-send: (0px, 178px, 0px, -178px, 85px, 52px, 308px, 230px, '../images/sprite.png', 'FigureIcon--send', );
-$-intro-arabesco-bottom-name: 'Intro--arabescoBottom';
-$-intro-arabesco-bottom-x: 0px;
-$-intro-arabesco-bottom-y: 125px;
-$-intro-arabesco-bottom-offset-x: 0px;
-$-intro-arabesco-bottom-offset-y: -125px;
-$-intro-arabesco-bottom-width: 243px;
-$-intro-arabesco-bottom-height: 53px;
-$-intro-arabesco-bottom-total-width: 308px;
-$-intro-arabesco-bottom-total-height: 230px;
-$-intro-arabesco-bottom-image: '../images/sprite.png';
-$-intro-arabesco-bottom: (0px, 125px, 0px, -125px, 243px, 53px, 308px, 230px, '../images/sprite.png', 'Intro--arabescoBottom', );
-$-intro-arabesco-top-name: 'Intro--arabescoTop';
-$-intro-arabesco-top-x: 0px;
-$-intro-arabesco-top-y: 71px;
-$-intro-arabesco-top-offset-x: 0px;
-$-intro-arabesco-top-offset-y: -71px;
-$-intro-arabesco-top-width: 243px;
-$-intro-arabesco-top-height: 54px;
-$-intro-arabesco-top-total-width: 308px;
-$-intro-arabesco-top-total-height: 230px;
-$-intro-arabesco-top-image: '../images/sprite.png';
-$-intro-arabesco-top: (0px, 71px, 0px, -71px, 243px, 54px, 308px, 230px, '../images/sprite.png', 'Intro--arabescoTop', );
 $-intro-name-vignoli-name: 'Intro--nameVignoli';
 $-intro-name-vignoli-x: 0px;
 $-intro-name-vignoli-y: 0px;
@@ -67,7 +67,7 @@ $-intro-name-vignoli: (0px, 0px, 0px, 0px, 308px, 71px, 308px, 230px, '../images
 $spritesheet-width: 308px;
 $spritesheet-height: 230px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($-figure-icon-newsletter, $-figure-icon-send, $-intro-arabesco-bottom, $-intro-arabesco-top, $-intro-name-vignoli, );
+$spritesheet-sprites: ($-arabesco-bottom-bottom, $-arabesco-top-intro, $-figure-icon-newsletter, $-figure-icon-send, $-intro-name-vignoli, );
 $spritesheet: (308px, 230px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables

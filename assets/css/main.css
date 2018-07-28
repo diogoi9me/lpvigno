@@ -1192,6 +1192,10 @@ strong {
   justify-content: flex-end;
 }
 
+.u-flexAlignItemsFlexStart {
+  align-items: flex-start;
+}
+
 .u-flexWrapWrap {
   flex-wrap: wrap;
 }
@@ -5532,6 +5536,20 @@ th.u-isShown {
   list-style-type: circle;
 }
 
+.ArabescoBottom--bottom {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -125px;
+  width: 243px;
+  height: 53px;
+}
+
+.ArabescoTop--intro {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -71px;
+  width: 243px;
+  height: 54px;
+}
+
 .FigureIcon--newsletter {
   background-image: url(../images/sprite.png);
   background-position: -243px -71px;
@@ -5544,20 +5562,6 @@ th.u-isShown {
   background-position: 0px -178px;
   width: 85px;
   height: 52px;
-}
-
-.Intro--arabescoBottom {
-  background-image: url(../images/sprite.png);
-  background-position: 0px -125px;
-  width: 243px;
-  height: 53px;
-}
-
-.Intro--arabescoTop {
-  background-image: url(../images/sprite.png);
-  background-position: 0px -71px;
-  width: 243px;
-  height: 54px;
 }
 
 .Intro--nameVignoli {
