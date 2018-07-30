@@ -14,10 +14,11 @@
  * Funções e Configurações do Tema
  */
 
+$skeleton_version = '1.7';
 
 
 function skeleton_setup() {
-	load_theme_textdomain( 'vignoli' );
+	load_theme_textdomain( 'lpvigno' );
 
 
 
@@ -62,20 +63,21 @@ add_action( 'after_setup_theme', 'skeleton_setup' );
 
 
 
-
-
 /**
  * Enqueue scripts and styles.
  */
 function skeleton_scripts() {
 
+	$skeleton_version = '1.0';
+
 	// Add custom fonts, used in the main stylesheet.
 
 	// Theme stylesheet.
-	wp_enqueue_style('css-main', get_template_directory_uri() . '/assets/css/main.min.css', array(), null);   
-
-    wp_enqueue_script('main');
-
+	wp_enqueue_style('css-main', get_template_directory_uri() . '/assets/css/main.min.css', array(), $skeleton_version, 'all');
+	wp_enqueue_script( 'js-jquery', get_template_directory_uri() . '/assets/js/jquery-3.2.1.min.js', array(), true );
+	wp_enqueue_script( 'js-main', get_template_directory_uri() . '/assets/js/main.min.js', array(), $skeleton_version, true );
+	wp_enqueue_script( 'js-paroller', get_template_directory_uri() . '/assets/js/jquery.paroller.min.js', array(), true );
+	
 
 
 ?>
@@ -145,12 +147,14 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
 <symbol id="iconPhone" viewBox="0 0 32 32">
 <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
 </symbol>
+<symbol id="iconArrowRightLine" viewBox="0 0 24 24">
+<path d="M19.9 12.4c0.1-0.2 0.1-0.5 0-0.8-0.1-0.1-0.1-0.2-0.2-0.3l-7-7c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l5.3 5.3h-11.6c-0.6 0-1 0.4-1 1s0.4 1 1 1h11.6l-5.3 5.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.5 0.3 0.7 0.3s0.5-0.1 0.7-0.3l7-7c0.1-0.1 0.2-0.2 0.2-0.3z"></path>
+</symbol>
 </defs>
 </svg>';
 
 
 
-//wp_enqueue_script( 'js-main', get_theme_file_uri( '/assets/js/main.min.js' ), array(), null );
 
 //wp_enqueue_script('jquery');
 
@@ -162,10 +166,10 @@ echo'<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" ver
 ///wp_enqueue_script( 'js-stellar', get_theme_file_uri( '/assets/js/jquery.paroller.min.js' ), array(), null );
 
 ?>
-
-<script type="text/javascript" src="<?php echo get_theme_file_uri( '/assets/js/jquery-3.2.1.min.js'); ?>"></script>
-<script type="text/javascript" src="<?php echo get_theme_file_uri( '/assets/js/main.min.js'); ?>"></script>
-
+<!-- 
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+ -->
 <?php
 }
 add_action( 'wp_footer', 'theme_footer_script' );

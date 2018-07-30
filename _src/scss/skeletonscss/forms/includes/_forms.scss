@@ -147,11 +147,8 @@ $mainSelector: '.Form';
 
 		& #{$mainSelector}-input:not([type="submit"]){
 			height: $sizeColumns_px;
-			background-color: rgba(0,0,0,0.25);
-			border-radius: 25px;
 			overflow: hidden;
 			border: none;
-			color: rgba(255,255,255,0.75);
 			
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 			  color: $color_1;
@@ -168,20 +165,6 @@ $mainSelector: '.Form';
 		}
 		& #{$mainSelector}-input[type="submit"]{
 			height: $sizeColumns_px;
-			background: none;
-			border-radius: 25px;
-			color: $color_1;
-			padding-left: 20px;
-			padding-right: 20px;
-			@media screen and (min-width: $break-md){
-				padding-left: 40px;
-				padding-right: 40px;
-				&:hover{
-					background: $color_3;
-					border-color: $color_3;
-					color: $color_2;
-				}
-			}
 		}
 	}
 	
@@ -302,26 +285,3 @@ $mainSelector: '.Form';
 		}
 	}
 }
-
-	.Form{
-						&-row{
-							max-width: 350px;
-							&--email{
-								&:before{
-									position: absolute;
-									display: block;
-									width: 85px;
-									height: 54px;
-									content: "";
-									z-index: 1;
-									right:3px;
-									bottom: 3px;
-									border-radius: 54px;
-
-									-moz-background: linear-gradient(to bottom right, $color_3, $color_7);
-									-webkit-background: linear-gradient(to bottom right, $color_3, $color_7);
-									background: linear-gradient(to bottom right, $color_3, $color_7);
-								}
-							}
-						}
-					}

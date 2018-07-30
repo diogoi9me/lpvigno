@@ -68,6 +68,47 @@ $( ".LightboxClose" ).on( "click", LightboxClose );
 
 
 
+// =====================================
+// .ScrollOn
+// Detecta o Movimento da Barra de Rolagem e aplica a classe no body
+// =====================================
+
+$(window).scroll(function(){
+
+
+     var scroll = $(window).scrollTop();
+
+     //Class ScrollOn
+     if ( scroll > 0 ) {
+
+      $('body').addClass('u-isScrollOn');
+
+     } else {
+      $('body').removeClass('u-isScrollOn');
+     }
+
+
+});
+
+
+
+    $(document)
+        .ready(function () {
+            //initialize paroller.js
+            $('[data-paroller-factor]').paroller();
+            //initialize paroller.js and set options for elements with .paroller class
+            $('.paroller-example').paroller({
+                factorXs: 0.1,
+                factorSm: 0.1,
+                factorMd: -0.4,
+                factorLg: -0.5,
+                factorXl: -0.6,
+                factor: -0.4,
+                type: 'foreground',
+                direction: 'horizontal'
+            });
+        });
+
 
 // /*=========================================================================================
 // // CLOSE FUNCTION
@@ -101,7 +142,4 @@ function KeyUpEsc(evt) {
 jQuery(document).on( "keyup", KeyUpEsc );
 
 // Mais formas de Fechar o LightBox
-
-
-
 

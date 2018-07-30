@@ -1,6 +1,7 @@
 .Site-header{
 	border-bottom: 1px solid rgba(255,255,255,0.5);
-	height: $header_height_m;
+	height: auto;
+	
 
 	@media screen and (min-width: $break-sm){
 		

@@ -322,6 +322,13 @@ $varSize: 8;
     width: 100% !important;
   }
 }
+$varSize: 9;
+.u-size#{$varSize}of#{$numColumns} {
+  width: 100% !important;
+  &--px {
+    width: 100% !important;
+  }
+}
 $varSize: 10;
 .u-size#{$varSize}of#{$numColumns} {
   width: 100% !important;
