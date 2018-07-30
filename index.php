@@ -12,6 +12,7 @@
 
 get_header(); ?>
 <!-- teste -->
+<!-- teste 2 -->
 <main id="main" class="SiteMain Site-main" role="main">
 	<?php  get_template_part('template-parts/plugins/plugin','lightbox'); ?>
 	<?php get_template_part('template-parts/page/intro','page'); ?>
